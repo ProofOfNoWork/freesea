@@ -31,11 +31,8 @@ export default function Sell() {
                         overrideOnclickBehavior={(nft) => {
                             setSelectedNFT(nft);
                         }}
-                        emptyText={
-                            <Text color="white">
-                                You don't own any NFTs yet from these collections.
-                            </Text>
-                        }
+                        emptyText="You don't own any NFTs yet from these collections."
+
                     />
                 ) : (
                     <Flex justifyContent={"center"} my={10}>
